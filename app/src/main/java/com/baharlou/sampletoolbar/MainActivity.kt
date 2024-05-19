@@ -16,6 +16,13 @@ class MainActivity : AppCompatActivity() {
 
         setToolbar()
         setCollapsing()
+        setFab()
+    }
+
+    private fun setFab() {
+        binding.fabOpenSite.setOnClickListener {
+
+        }
     }
 
     private fun setCollapsing() {
