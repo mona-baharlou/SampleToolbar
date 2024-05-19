@@ -2,6 +2,7 @@ package com.baharlou.sampletoolbar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.core.content.ContextCompat
 import com.baharlou.sampletoolbar.databinding.ActivityMainBinding
 
@@ -25,5 +26,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun setToolbar() {
         setSupportActionBar(binding.toolbarMain)
+
+        supportActionBar!!.setHomeButtonEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        if (item.itemId == android.R.id.home) {
+            onBackPressed()
+        }
+
+        return true
     }
 }
