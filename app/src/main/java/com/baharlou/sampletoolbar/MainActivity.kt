@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         binding.collapsingMain.setExpandedTitleColor(
             ContextCompat.getColor(this, android.R.color.transparent)
         )
+
+        //binding.collapsingMain.title = "my title"
     }
 
     private fun setToolbar() {
