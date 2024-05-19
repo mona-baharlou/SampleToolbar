@@ -2,6 +2,7 @@ package com.baharlou.sampletoolbar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import com.baharlou.sampletoolbar.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setToolbar()
+        setCollapsing()
+    }
+
+    private fun setCollapsing() {
+        binding.collapsingMain.setExpandedTitleColor(
+            ContextCompat.getColor(this, android.R.color.transparent)
+        )
     }
 
     private fun setToolbar() {

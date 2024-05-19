@@ -16,7 +16,8 @@
 
     <!-- Customize your toolbar here-->
     <style name="myToolbar" parent="Theme.MaterialComponents">
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">26sp</item>
+
     </style>
 
     <style name="Theme.SampleToolbar" parent="Base.Theme.SampleToolbar" />
