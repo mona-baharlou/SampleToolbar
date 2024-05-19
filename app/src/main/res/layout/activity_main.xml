@@ -11,6 +11,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
             android:id="@+id/toolbar_main"
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -24,6 +25,8 @@
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/frag_main_container"
+        android:name="com.baharlou.sampletoolbar.TestFragment"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
 
